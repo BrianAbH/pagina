@@ -1,0 +1,141 @@
+/* Reseteo de estilos básicos para todos los elementos */
+*{
+    padding: 0;
+    margin: 0; 
+    text-decoration: none; 
+}
+
+/* Estilo de fondo para el body */
+body{
+    background: #FDFAF6; 
+}
+
+/* Estilos para el contenedor del título */
+.contenedor-titulo{
+    background-color: #F5EEDD; 
+    width: 100%;
+    height: 300px;
+}
+
+/* Estilo para el título dentro del contenedor */
+.titulo{
+    margin: 0 auto;
+    width: 100%; 
+    height: 100%;
+    display: block; 
+    align-content: center; 
+    text-align: center; 
+}
+
+/* Contenedor de los datos (formulario y tabla) */
+.contenedor-datos{
+    margin-top: 25px; 
+    width: 100%; 
+    height: 600px; 
+    padding: 20px; 
+    display: flex; 
+    align-content: center; 
+    text-align: center; 
+}
+
+/* Contenedor del formulario */
+.contenedor-form{
+    width: 30%; 
+    height: 550px;
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: left; 
+    margin-left: 8%; 
+    border-radius: 50px;
+    box-shadow: 0 0 5px #000000; 
+    background-color: #EBE8DB; 
+}
+
+/* Estilo para el grupo de campos dentro del formulario */
+.form-group{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    grid-gap: 40px;
+    margin-bottom: 20px; 
+}
+
+/* Estilo para los campos de entrada dentro del formulario */
+.form-content{
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Estilo para las etiquetas de los campos */
+.form-label{
+    font-weight: 600; 
+    color: #000000; 
+    margin-bottom: 10px; 
+    font-family: "Inter", sans-serif;
+    font-weight: 500; 
+    font-size: 20px; 
+}
+
+/* Estilo para los campos de entrada */
+.form-input{
+    height: 50px; 
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #000000; 
+    background: #FFFFFF; 
+    font-weight: 500; 
+    font-size: 20px; 
+    outline: none; 
+    resize: none; 
+}
+
+/* Estilo para un campo de entrada específico (ej. dirección) */
+.form-input#direccion{  
+    width: 217%; 
+}
+
+/* Estilo para los campos de entrada cuando están en foco (clicked o activados) */
+.form-input:focus {
+    border-color: #6a64f1; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05); 
+}
+
+/* Estilo para el botón de guardar */
+.btn-Guardar{
+    margin-left: 145px; 
+    margin-top: 40px;
+    padding: 15px; 
+    width: 40%;
+    color: #000000;
+    background-color: #e69a0d; 
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+/* Efecto hover para el botón de guardar */
+.btn-Guardar:hover{
+    background: black; 
+    color: white; 
+    transition: all .4s;
+    transform: scale(1.05); 
+}
+
+/* Estilo para el contenedor de la tabla */
+.contenedor-tabla{
+    width: 60%;
+    padding: 10px;
+    margin-left: 1%;
+}
+
+/* Contenedor para habilitar el desplazamiento en la tabla */
+.scroll-wrapper{
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin: 0 auto; 
+}

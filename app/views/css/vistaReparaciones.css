@@ -1,0 +1,152 @@
+/* Reset básico para eliminar márgenes, paddings y decoración de texto */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+/* Estilos generales para el body */
+body {
+    background: #FDFAF6; 
+    font-family: "Inter", sans-serif;
+}
+
+/* Contenedor del título principal */
+.contenedor-titulo {
+    background-color: #F5EEDD; 
+    width: 100%;
+    height: 300px;
+}
+
+/* Título centrado dentro del contenedor */
+.titulo {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-content: center;
+    text-align: center; 
+}
+
+/* Sección principal que contiene el formulario y otros datos */
+.contenedor-datos {
+    margin-top: 15px;
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+    display: flex; 
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.contenedor-form {
+    width: 33%;
+    margin-left: 2%;
+    padding: 20px;
+    background-color: #EBE8DB; 
+    border-radius: 50px;
+    box-shadow: 0 0 5px #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* Agrupa campos del formulario en dos columnas */
+.form-group {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
+}
+
+/* Contenedor de cada campo individual */
+.form-content {
+    width: 235px;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Etiquetas de los campos */
+.form-label {
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilos generales para inputs y selects */
+.form-input,
+.form-input-date,
+.select {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #000000; 
+    border-radius: 10px;
+    background: #FFFFFF;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+}
+
+/* Efecto visual al enfocar un input o select */
+.form-input:focus,
+.form-input-date:focus,
+.select:focus {
+    border-color: #6a64f1; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05); 
+}
+
+/* Ajuste especial para inputs tipo fecha */
+.form-input-date {
+    font-size: 15px; 
+    width: 100%
+}
+
+#FechaReparacion{
+    width: 510px;
+}
+
+/* Estilos para select (combobox) */
+.select {
+    cursor: pointer; 
+}
+
+/* Botón para guardar datos */
+.btn-Guardar {
+    margin: 10px 0 0 145px;
+    padding: 15px;
+    width: 40%;
+    background-color: #e69a0d; 
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s; 
+    cursor: pointer;
+}
+
+/* Efecto hover para el botón */
+.btn-Guardar:hover {
+    background: #000000; 
+    color: #FFFFFF;
+    transform: scale(1.05); 
+}
+
+/* Contenedor para la tabla */
+.contenedor-tabla {
+    width: 70%;
+    padding: 10px;
+    margin-left: 1%;
+}
+
+/* Scroll en el contenedor cuando el contenido excede la altura */
+.scroll-wrapper {
+    max-height: 380px;
+    overflow-y: auto; 
+    margin: 0 auto;
+}

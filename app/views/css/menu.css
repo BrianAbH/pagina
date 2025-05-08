@@ -1,0 +1,24 @@
+.menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    background-color: #F5EEDD;
+    box-shadow: 0 0 5px #000000;
+}
+
+.menu h1{
+    margin-left: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu a{
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #666161;
+    font-weight: 600;
+}
+
+
